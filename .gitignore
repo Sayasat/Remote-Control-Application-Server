@@ -38,3 +38,4 @@ out/
 
 ### Firebase config file ###
 src/main/resources/credentials.json
+.env
