@@ -37,5 +37,4 @@ out/
 .vscode/
 
 ### Firebase config file ###
-src/main/resources/credentials.json
-.env
+#src/main/resources/credentials.json
