@@ -15,7 +15,7 @@ public class SecurityConfig {
         http.
                 csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers( "/verify-token").permitAll()
+                        .requestMatchers( "/v3/api-docs","swagger-ui.html","/verify-token").permitAll()
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(new FirebaseAuthFilter(), UsernamePasswordAuthenticationFilter.class);
